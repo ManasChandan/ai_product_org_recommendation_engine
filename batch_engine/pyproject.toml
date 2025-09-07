@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "batch-engine"
+version = "0.1.0"
+description = "Batch processing engine for recommendation engine (ETL, Spark, OR-Tools)"
+authors = ["Your Name"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyspark = "^3.5"
+pandas = "^2.2"
+neo4j = "^5.20"
+sqlalchemy = "^2.0"
+psycopg2-binary = "^2.9"
+ortools = "^9.10"
+networkx = "^3.3"
+mlxtend = "^0.23"
+common = { path = "../common" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+black = "^24.4"
+isort = "^5.13"
