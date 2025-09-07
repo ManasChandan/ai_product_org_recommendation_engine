@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "frontend"
+version = "0.1.0"
+description = "Streamlit frontend for product organisation recommendation engine"
+authors = ["Rohit Kamble", "Manas Chandan Behera"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.37"
+requests = "^2.32"
+pandas = "^2.2"
+plotly = "^5.24"
+common = { path = "../common" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+black = "^24.4"
+isort = "^5.13"

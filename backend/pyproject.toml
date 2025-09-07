@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "FastAPI backend for recommendation engine"
+authors = ["Rohit Kamble", "Manas Chandan Behera"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115"
+uvicorn = "^0.30"
+pandas = "^2.2"
+sqlalchemy = "^2.0"
+psycopg2-binary = "^2.9"
+neo4j = "^5.20"
+ortools = "^9.10"
+pydantic = "^2.9"
+requests = "^2.32"
+common = { path = "../common" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+black = "^24.4"
+isort = "^5.13"
