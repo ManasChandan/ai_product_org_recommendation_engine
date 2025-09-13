@@ -2,7 +2,7 @@
 name = "product-org-reco-engine"
 version = "0.1.0"
 description = "Local development environment for Product Organisation Recommendation Engine"
-authors = ["Your Name"]
+authors = ["Rohit Kamble", "Manas Chandan Behera"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
