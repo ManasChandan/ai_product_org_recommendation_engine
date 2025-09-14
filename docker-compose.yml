@@ -26,9 +26,9 @@ services:
       dockerfile: batch_engine/Dockerfile
     depends_on:
       - postgres
-      - neo4j
     volumes:
       - ./data:/app/data
+      - ./datasets:/app/datasets   # Added volume for datasets folder
 
   postgres:
     image: postgres:15
@@ -41,6 +41,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./db/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
   neo4j:
     image: neo4j:5.21
